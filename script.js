@@ -54,7 +54,7 @@ function datamaskinensValg() {
 
   // Lager betingelser som viser hva resultatet blir
   if (dittValg === dataTall) {
-    visResultat.innerHTML = 'Det ble uavgjort!'
+    visResultat.innerHTML = 'Det ble uavgjort.'
   }
   else if (dittValg === 'stein' && dataTall === 'saks') {
     visResultat.innerHTML = 'Du vant!'}
