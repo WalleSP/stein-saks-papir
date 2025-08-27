@@ -19,8 +19,9 @@ const valg = ['stein', 'saks', 'papir'];
 // Stein
 function velgStein() {
   dittValg = 'stein';
-
-  datamaskinensValg();
+  visDatamaskinensValg.innerHTML = "Datamaskinen tenker.."
+  visResultat.innerHTML = 'Venter på datamaskinen...';
+  setTimeout(datamaskinensValg, 2000)
 }
 
 steinKnapp.addEventListener('click', velgStein);
@@ -28,8 +29,9 @@ steinKnapp.addEventListener('click', velgStein);
 // Saks
 function velgSaks() {
   dittValg = 'saks';
-
-  datamaskinensValg();
+  visDatamaskinensValg.innerHTML = "Datamaskinen tenker.."
+  visResultat.innerHTML = 'Venter på datamaskinen...';
+  setTimeout(datamaskinensValg, 2000)
 }
 
 saksKnapp.addEventListener('click', velgSaks);
@@ -38,7 +40,9 @@ saksKnapp.addEventListener('click', velgSaks);
 function velgPapir() {
   dittValg = 'papir';
 
-  datamaskinensValg();
+  visDatamaskinensValg.innerHTML = "Datamaskinen tenker.."
+  visResultat.innerHTML = 'Venter på datamaskinen...';
+  setTimeout(datamaskinensValg, 2000)
 }
 
 papirKnapp.addEventListener('click', velgPapir);
@@ -67,3 +71,5 @@ function datamaskinensValg() {
 
   else {visResultat.innerHTML = 'Du tapte..'};
 };
+
+
